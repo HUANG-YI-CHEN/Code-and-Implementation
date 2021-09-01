@@ -1,0 +1,10 @@
+imagex /info C:\Tools\sources\install.wim 1 "Windows 7 Starter x86" "Windows 7 With Sp1 簡易版x86"
+imagex /info C:\Tools\sources\install.wim 2 "Windows 7 HomePremium x86" "Windows 7 With Sp1 家用進階版x86"
+imagex /info C:\Tools\sources\install.wim 3 "Windows 7 Professional x86" "Windows 7 With Sp1 專業版x86"
+imagex /info C:\Tools\sources\install.wim 4 "Windows 7 Enterprise x86" "Windows 7 With Sp1 企業版x86"
+imagex /info C:\Tools\sources\install.wim 5 "Windows 7 Ultimate x86" "Windows 7 With Sp1 旗艦版x86"
+imagex /info C:\Tools\sources\install.wim 6 "Windows 7 HomePremium x64" "Windows 7 With Sp1 家用進階版x64"
+imagex /info C:\Tools\sources\install.wim 7 "Windows 7 professional x64" "Windows 7 With Sp1 專業版x64"
+imagex /info C:\Tools\sources\install.wim 8 "Windows 7 Enterprise x64" "Windows 7 With Sp1 企業版x64"
+imagex /info C:\Tools\sources\install.wim 9 "Windows 7 Ultimate x64" "Windows 7 With Sp1 旗艦版x64"
+PAUSE

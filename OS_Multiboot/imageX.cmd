@@ -1,0 +1,10 @@
+imagex /export C:\x86.wim 1 C:\Tools\sources\install.wim "Windows 7 Starter x86"
+imagex /export C:\x86.wim 3 C:\Tools\sources\install.wim "Windows 7 Home Premium x86"
+imagex /export C:\x86.wim 4 C:\Tools\sources\install.wim "Windows 7 Professional x86"
+imagex /export C:\x86_ent.wim 1 C:\Tools\sources\install.wim "Windows 7 Enterprise x86"
+imagex /export C:\x86.wim 5 C:\Tools\sources\install.wim "Windows 7 Ultimate x86"
+imagex /export C:\x64.wim 2 C:\Tools\sources\install.wim "Windows 7 Home Premium x64"
+imagex /export C:\x64.wim 3 C:\Tools\sources\install.wim "Windows 7 Professional x64"
+imagex /export C:\x64_ent.wim 1 C:\Tools\sources\install.wim "Windows 7 Enterprise x64"
+imagex /export C:\x64.wim 4 C:\Tools\sources\install.wim "Windows 7 Ultimate x64"
+PAUSE

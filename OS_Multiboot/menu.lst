@@ -1,0 +1,70 @@
+﻿timeout 
+default 2
+UNIFONT /U16.BIN
+splashimage /LOGO.xpm
+
+title [ EZBOOT 介 面 選 單 ]\n 歡迎使用本軟件,請選擇以上項目:
+clear
+title 
+clear
+title   - 進入 GHOST XP 快速裝機主選單\n 進入GHOSTXP快速裝機的主選單,並含有DOS硬體檢測工具。
+map (hd0,0)/1.ISO (hd32)
+map --hook
+chainloader (hd32)
+boot
+title
+clear
+
+title [ 快 速 選 項 ]
+clear
+title 
+clear
+title       - 執行 NoName XPE\n 超微型免安裝作業系統,一分鐘進入Windows介面(含維修檢測工具)
+find --set-root /peldr
+chainloader /peldr
+
+title       - 執行 Ghost 11\n Ghost 11.0.2  備份/還原工具
+map --mem /grub/ghost.img (fd0)
+map --hook
+chainloader (fd0)+1
+rootnoverify (fd0)
+
+title       - 執行 SPFDISK\n 硬碟分割程式
+map --mem /grub/spfdisk.img (fd0)
+map --hook
+chainloader (fd0)+1
+rootnoverify (fd0)
+
+title       - 執行 Partition Magic 8\n 硬碟分割程式
+map --mem /grub/pm805.img (fd0)
+map --hook
+chainloader (fd0)+1
+rootnoverify (fd0)
+
+title       - 執行 全自動安裝 GHOST XP SP3\n 執行後,自動把GHOSTXP還原到第一硬碟的第一分區。注意:使用前必須進行備份
+configfile /xp.lst
+
+title       - 執行 Windows 7 Ultimate
+find --set-root /bootmgr
+chainloader /bootmgr
+
+title Ubuntu 12.04 桌面版 LTS (Live USB) \n按下 Enter 鍵進行 安裝/試用 Ubuntu 12.04 桌面版 LTS（長期支援）。
+root (hd0,0)
+kernel (hd0,0)/grub/vmlinuz.efi boot=casper iso-scan/filename=/grub/ubuntu-12.04.4-desktop-amd64.iso
+initrd (hd0,0)/grub/initrd.lz
+
+title Ubuntu 13.04 桌面版 LTS (Live USB) \n按下 Enter 鍵進行 安裝/試用 Ubuntu 12.04 桌面版 LTS（長期支援）。
+root (hd0,0)
+kernel (hd0,0)/grub/ubuntu13.04/vmlinuz.efi boot=casper iso-scan/filename=/grub/ubuntu13.04/ubuntu-13.04-desktop-amd64.iso
+initrd (hd0,0)/grub/ubuntu13.04/initrd.lz
+
+title
+clear
+title
+clear
+
+title   -  重新啟動\n 
+reboot
+title   -  關機\n 
+halt
+

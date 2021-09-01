@@ -1,0 +1,51 @@
+imagex /export x86.wim 1 install.wim "Windows 7 Starter (x86)"
+imagex /export x86.wim 2 install.wim "Windows 7 Home Basic (x86)"
+imagex /export x86.wim 3 install.wim "Windows 7 Home Premium (x86)"
+imagex /export x86.wim 4 install.wim "Windows 7 Professional (x86)"
+imagex /export x86.wim 5 install.wim "Windows 7 Ultimate (x86)"
+imagex /export x86.wim 1 install.wim "Windows 7 Enterprise (x86)"
+
+imagex /export x64.wim 1 install.wim "Windows 7 Home Basic (x64)"
+imagex /export x64.wim 2 install.wim "Windows 7 Home Premium (x64)"
+imagex /export x64.wim 3 install.wim "Windows 7 Professional (x64)"
+imagex /export x64.wim 4 install.wim "Windows 7 Ultimate (x64)"
+imagex /export x86.wim 1 install.wim "Windows 7 Enterprise (x64)"
+
+imagex /export C:\x86.wim 1 C:\Tools\sources\install.wim "Windows 7 Starter (x86)"
+imagex /export C:\x86.wim 3 C:\Tools\sources\install.wim "Windows 7 Home Premium (x86)"
+imagex /export C:\x86.wim 4 C:\Tools\sources\install.wim "Windows 7 Professional (x86)"
+imagex /export C:\x86_ent.wim 1 C:\Tools\sources\install.wim "Windows 7 Enterprise (x86)"
+imagex /export C:\x86.wim 5 C:\Tools\sources\install.wim "Windows 7 Ultimate (x86)"
+imagex /export C:\x64.wim 2 C:\Tools\sources\install.wim "Windows 7 Home Premium (x64)"
+imagex /export C:\x64.wim 3 C:\Tools\sources\install.wim "Windows 7 Professional (x64)"
+imagex /export C:\x64_ent.wim 1 C:\Tools\sources\install.wim "Windows 7 Enterprise (x64)"
+imagex /export C:\x64.wim 4 C:\Tools\sources\install.wim "Windows 7 Ultimate (x64)"
+
+tw_windows_7_enterprise_with_sp1_x64_dvd_620173.iso
+555EF6300572198EE9B8D262FA22A07DA201A40B
+3.02GB
+2011-02-22
+tw_windows_7_enterprise_with_sp1_x86_dvd_620158.iso
+0C3429CDC9E11FD288B2CC37D536957EF347C507
+2.3GB
+2011-02-22
+
+imagex /info C:\Tools\sources\install.wim 1 "Windows 7 Starter x86" "Windows 7 With Sp1 簡易版x86"
+imagex /info C:\Tools\sources\install.wim 2 "Windows 7 HomeBasic x86" "Windows 7 With Sp1 家用基礎版x86"
+imagex /info C:\Tools\sources\install.wim 3 "Windows 7 HomePremium x86" "Windows 7 With Sp1 家用進階版x86"
+imagex /info C:\Tools\sources\install.wim 4 "Windows 7 Professional x86" "Windows 7 With Sp1 專業版x86"
+imagex /info C:\Tools\sources\install.wim 5 "Windows 7 Ultimate x86" "Windows 7 With Sp1 旗艦版x86"
+imagex /info C:\Tools\sources\install.wim 6 "Windows 7 HomeBasic x64" "Windows 7 With Sp1 家用基礎版x64"
+imagex /info C:\Tools\sources\install.wim 7 "Windows 7 HomePremium x64" "Windows 7 With Sp1 家用進階版x64"
+imagex /info C:\Tools\sources\install.wim 8 "Windows 7 professional x64" "Windows 7 With Sp1 專業版x64"
+imagex /info C:\Tools\sources\install.wim 9 "Windows 7 Ultimate x64" "Windows 7 With Sp1 旗艦版x64"
+
+imagex /info C:\Tools\sources\install.wim 1 "Windows 7 Starter (x86)" "Windows 7 With Sp1 簡易版x86"
+imagex /info C:\Tools\sources\install.wim 2 "Windows 7 HomePremium (x86)" "Windows 7 With Sp1 家用進階版x86"
+imagex /info C:\Tools\sources\install.wim 3 "Windows 7 Professional (x86)" "Windows 7 With Sp1 專業版x86"
+imagex /info C:\Tools\sources\install.wim 4 "Windows 7 Enterprise (x86)" "Windows 7 With Sp1 企業版x86"
+imagex /info C:\Tools\sources\install.wim 5 "Windows 7 Ultimate (x86)" "Windows 7 With Sp1 旗艦版x86"
+imagex /info C:\Tools\sources\install.wim 6 "Windows 7 HomePremium (x64)" "Windows 7 With Sp1 家用進階版x64"
+imagex /info C:\Tools\sources\install.wim 7 "Windows 7 professional (x64)" "Windows 7 With Sp1 專業版x64"
+imagex /info C:\Tools\sources\install.wim 8 "Windows 7 Enterprise (x64)" "Windows 7 With Sp1 企業版x64"
+imagex /info C:\Tools\sources\install.wim 9 "Windows 7 Ultimate (x64)" "Windows 7 With Sp1 旗艦版x64"
